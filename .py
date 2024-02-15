@@ -9,9 +9,9 @@ from sklearn.metrics import mean_squared_error
 import matplotlib.pyplot as plt
 
 # Generate some sample data
-np.random.seed(42)
-X = 2 * np.random.rand(100, 1)
-y = 4 + 3 * X + np.random.randn(100, 1)
+np.random.seed(1)
+X = 2 * np.random.rand(10, 1)
+y = 4 + 3 * X + np.random.randn(10, 1)
 
 # Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
